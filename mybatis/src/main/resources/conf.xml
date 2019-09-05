@@ -15,5 +15,7 @@
     </environments>
     <mappers>
         <mapper resource="mapper/UserMapper.xml"></mapper>
+        <mapper resource="mapper/UserMapper1.xml"></mapper>
+        <mapper class="com.christ.utils.UserDao2"></mapper>
     </mappers>
 </configuration>

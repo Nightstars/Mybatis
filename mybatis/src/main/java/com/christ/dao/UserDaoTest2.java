@@ -2,7 +2,7 @@ package com.christ.dao;
 
 import com.christ.entities.User;
 import com.christ.utils.MybatisUtil;
-import com.christ.utils.UserDao;
+import com.christ.utils.UserDao2;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.junit.jupiter.api.AfterAll;
@@ -13,14 +13,14 @@ import java.io.IOException;
 import java.util.Date;
 import java.util.List;
 
-public class UserDaoTest {
-    static UserDao userDao=null;
+public class UserDaoTest2 {
+    static UserDao2 userDao=null;
     static SqlSession sqlSession=null;
     @BeforeAll
     public static void init() throws IOException {
         SqlSessionFactory sqlSessionFactory= MybatisUtil.getSqlSessionFactory();
         sqlSession=sqlSessionFactory.openSession();
-        userDao=sqlSession.getMapper(UserDao.class);
+        userDao=sqlSession.getMapper(UserDao2.class);
 
     }
     @Test
@@ -34,11 +34,11 @@ public class UserDaoTest {
     }
     @Test
     public void deleteuser() {
-        userDao.deleteUser(8);
+        userDao.deleteUser(6);
     }
     @Test
     public void updateuser() {
-        userDao.updateUser(new User(1,"Jack1","654321",24));
+        userDao.updateUser(new User(7,"Jack1","654321",24));
     }
     @Test
     public void selectalluser() {
