@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                                            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <bean id="girl" class="com.christ.spring_ioc.other.JapaneseGirl"></bean>
+    <bean id="boy" class="com.christ.spring_ioc.other.Boy" autowire="byType">
+        <property name="name" value="Tom"></property>
+        <property name="girl" ref="girl"></property>
+    </bean>
+    <bean id="beanCollection" class="com.christ.spring_ioc.other.BeanCollection">
+        <property name="courses">
+            <list>
+                <value>Spring Ioc</value>
+                <value>Spring AOP</value>
+                <value>Spring Boot</value>
+            </list>
+        </property>
+        <property name="cups">
+            <map>
+                <entry key="2008" value="china"></entry>
+                <entry key="2012" value="Japan"></entry>
+                <entry key="2016" value="USA"></entry>
+            </map>
+        </property>
+        <property name="ps">
+            <props>
+                <prop key="driverClassName">com.mysql.cj.jdbc.Driver</prop>
+                <prop key="JdbcUrl">jdbc:mysql://127.0.0.1:9999/student1</prop>
+                <prop key="UserName">root</prop>
+                <prop key="password">xxx</prop>
+            </props>
+        </property>
+    </bean>
+</beans>

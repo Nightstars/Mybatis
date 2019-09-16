@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="japaneseGirl" class="com.christ.spring_ioc.pojos.JananeseGirl">
+        <constructor-arg name="name" value="Lucy"></constructor-arg>
+
+        <constructor-arg name="age" value="20"></constructor-arg>
+    </bean>
+    <bean id="koeraGirl" class="com.christ.spring_ioc.pojos.KoeraGirl">
+        <property name="name" value="Alice"></property>
+        <property name="age" value="21"></property>
+    </bean>
+    <bean id="boy" class="com.christ.spring_ioc.pojos.Boy">
+        <constructor-arg name="name" value="Tom"></constructor-arg>
+        <constructor-arg name="girl" ref="japaneseGirl"></constructor-arg>
+    </bean>
+    <bean id="boy1" class="com.christ.spring_ioc.pojos.Boy">
+        <property name="name" value="King"></property>
+        <property name="girl" ref="koeraGirl"></property>
+    </bean>
+</beans>

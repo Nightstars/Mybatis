@@ -1,0 +1,17 @@
+11:37:30.680 INFO  com.christ.spring_ioc.other.App 14 main - Boy{name='Tom', girl=com.christ.spring_ioc.other.JapaneseGirl@4c60d6e9}
+11:37:30.688 INFO  com.christ.spring_ioc.other.App 15 main - Tom
+11:37:30.689 INFO  com.christ.spring_ioc.other.App 16 main - com.christ.spring_ioc.other.JapaneseGirl@4c60d6e9
+11:37:30.689 INFO  com.christ.spring_ioc.other.App 17 main - Japanese girl is kissing...
+13:47:16.867 INFO  com.christ.spring_ioc.other.App 23 main - [Spring Ioc, Spring AOP, Spring Boot]
+14:05:23.307 INFO  com.christ.spring_ioc.other.App 25 main - [Spring Ioc, Spring AOP, Spring Boot]
+14:05:23.317 INFO  com.christ.spring_ioc.other.App 28 main - key= 2008 and value= china
+14:05:23.318 INFO  com.christ.spring_ioc.other.App 28 main - key= 2012 and value= Japan
+14:05:23.318 INFO  com.christ.spring_ioc.other.App 28 main - key= 2016 and value= USA
+14:17:47.328 INFO  com.christ.spring_ioc.other.App 27 main - [Spring Ioc, Spring AOP, Spring Boot]
+14:17:47.335 INFO  com.christ.spring_ioc.other.App 31 main - key= 2008 and value= china
+14:17:47.335 INFO  com.christ.spring_ioc.other.App 31 main - key= 2012 and value= Japan
+14:17:47.335 INFO  com.christ.spring_ioc.other.App 31 main - key= 2016 and value= USA
+14:17:47.336 INFO  com.christ.spring_ioc.other.App 36 main - password	xxx
+14:17:47.336 INFO  com.christ.spring_ioc.other.App 36 main - JdbcUrl	jdbc:mysql://127.0.0.1:9999/student1
+14:17:47.337 INFO  com.christ.spring_ioc.other.App 36 main - driverClassName	com.mysql.cj.jdbc.Driver
+14:17:47.337 INFO  com.christ.spring_ioc.other.App 36 main - UserName	root

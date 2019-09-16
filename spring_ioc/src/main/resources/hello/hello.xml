@@ -8,4 +8,8 @@
         <constructor-arg name="name" value="Tom"></constructor-arg>
         <constructor-arg name="salary" value="8000"></constructor-arg>
     </bean>
+    <bean id="emp1" class="com.christ.spring_ioc.Emp">
+       <property name="name" value="Jack"></property>
+       <property name="salary" value="8500"></property>
+    </bean>
 </beans>

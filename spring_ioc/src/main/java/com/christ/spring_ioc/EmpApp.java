@@ -6,7 +6,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class EmpApp {
     public static void main(String[] args) {
         ApplicationContext applicationContext=new ClassPathXmlApplicationContext("hello/hello.xml");
-        Emp emp=applicationContext.getBean(Emp.class);
+        Emp emp=(Emp) applicationContext.getBean("emp");
         System.out.println(emp);
+        Emp emp1=(Emp) applicationContext.getBean("emp1");
+        System.out.println(emp1);
     }
 }

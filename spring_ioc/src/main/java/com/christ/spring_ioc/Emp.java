@@ -19,7 +19,9 @@ public class Emp {
     public void setSalary(int salary) {
         this.salary = salary;
     }
+    public  Emp(){
 
+    }
     public Emp(String name, int salary) {
         this.name = name;
         this.salary = salary;
