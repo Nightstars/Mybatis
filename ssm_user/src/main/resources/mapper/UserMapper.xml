@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.christ.dao.UserDao">
+    <insert id="insertUser" parameterType="com.christ.pojos.User">
+        insert  into users(name,password,age,birthday) values(#{name},#{password},#{age},#{birthday})
+    </insert>
+    <delete id="deleteUser" parameterType="int">
+        delete from users where id=#{id}
+    </delete>
+    <update id="updateUser" parameterType="com.christ.pojos.User">
+        update users set name= #{name},password=#{password},age=#{age} where id=#{id}
+    </update>
+    <select id="getUserById" parameterType="int" resultType="com.christ.pojos.User">
+        select * from users where id=#{id}
+    </select>
+    <select id="getAll" resultType="com.christ.pojos.User">
+        select * from users
+    </select>
+</mapper>
