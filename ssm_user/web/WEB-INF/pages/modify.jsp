@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <html>
 <head>
     <title>Title</title>
@@ -38,7 +39,7 @@
         <div class="form-group">
             <label for="birthday" class="col-sm-2 control-label"><b>Birthday</b></label>
             <div class="col-sm-10">
-                <input type="date" class="form-control" id="birthday" placeholder="birthday" style="width: 200px;" name="birthday" value="2019-02-24">
+                <input type="date" class="form-control" id="birthday" placeholder="birthday" style="width: 200px;" name="birthday" value="<fmt:formatDate value="${user.birthday}" pattern="yyyy-MM-dd" />">
             </div>
         </div>
         <div class="form-group">
@@ -47,7 +48,6 @@
             </div>
         </div>
     </form>
-    ${user.birthday}
 </div>
 </body>
 </html>

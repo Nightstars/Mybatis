@@ -9,9 +9,9 @@
 <html>
 <head>
     <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
     <script type="text/javascript" src="jQuery/jQuery3.4.1.js"></script>
-    <script type="text/javascript" src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
     <%--<script>
         $(function () {
            $("#btn_regist").click(function () {
@@ -28,30 +28,29 @@
     </script>--%>
 </head>
 <body>
-<div style="width: 230px;margin: 15px auto 0;">
-    <form class="form-horizontal" method="post" action="${pageContext.request.contextPath}/list" name="myForm">
+    <form class="form-horizontal" method="post" action="${pageContext.request.contextPath}/add" name="myForm" style="width: 30%;margin: 15px auto 0;">
         <div class="form-group">
             <label for="inputEmail3" class="col-sm-2 control-label"><b>Username</b></label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="inputEmail3" placeholder="Username" style="width: 200px;" name="name">
+                <input type="text" class="form-control" id="inputEmail3" placeholder="Username" name="name">
             </div>
         </div>
         <div class="form-group">
             <label for="inputPassword3" class="col-sm-2 control-label"><b>Password</b></label>
             <div class="col-sm-10">
-                <input type="password" class="form-control" id="inputPassword3" placeholder="Password" style="width: 200px;" name="password">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Password" name="password">
             </div>
         </div>
         <div class="form-group">
             <label for="age" class="col-sm-2 control-label"><b>Age</b></label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="age" placeholder="age" style="width: 200px;" name="age">
+                <input type="text" class="form-control" id="age" placeholder="age" name="age">
             </div>
         </div>
         <div class="form-group">
             <label for="birthday" class="col-sm-2 control-label"><b>Birthday</b></label>
             <div class="col-sm-10">
-                <input type="date" class="form-control" id="birthday" placeholder="birthday" style="width: 200px;" name="birthday">
+                <input type="date" class="form-control" id="birthday" placeholder="birthday" name="birthday">
             </div>
         </div>
         <div class="form-group">
@@ -60,6 +59,5 @@
             </div>
         </div>
     </form>
-</div>
 </body>
 </html>

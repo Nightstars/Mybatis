@@ -14,15 +14,20 @@ public class UserControl {
    @Autowired
    UserService userService;
     @RequestMapping("list")
-    public ModelAndView list(User user){
+    public ModelAndView list(Integer pageNum,Integer pageSize){
+        List<User> userList=userService.getPage(pageNum,pageSize).getResult();
+        ModelAndView modelAndView=new ModelAndView("list","users",userList);
+        return modelAndView;
+    }
+    @RequestMapping("add")
+    public ModelAndView add(User user){
         userService.save(user);
-        List<User> userList=userService.getAll();
+        List<User> userList=userService.getPage(1,10).getResult();
         ModelAndView modelAndView=new ModelAndView("list","users",userList);
         return modelAndView;
     }
     @RequestMapping("modify")
     public ModelAndView modify(User user){
-        System.out.println(user.getId());
         userService.modify(user);
         List<User> userList=userService.getAll();
         ModelAndView modelAndView=new ModelAndView("list","users",userList);

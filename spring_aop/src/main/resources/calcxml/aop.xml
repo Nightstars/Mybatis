@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 加入命名空間:aop -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+			http://www.springframework.org/schema/beans/spring-beans.xsd
+			http://www.springframework.org/schema/aop
+			http://www.springframework.org/schema/aop/spring-aop.xsd
+			http://www.springframework.org/schema/context
+			http://www.springframework.org/schema/context/spring-context.xsd">
+	<!--<context:component-scan base-package="com.chrit.aop.perform"></context:component-scan>-->
+	<!--<context:component-scan base-package="com.chrit.aop.calc"></context:component-scan>
+	&lt;!&ndash; 方面类可以用AspectJ相关的注解 &ndash;&gt;
+	<aop:aspectj-autoproxy></aop:aspectj-autoproxy>-->
+	<bean id="calcImpl" class="com.chrit.aop.calcxml.CalcImpl"></bean>
+	<bean id="logAspect" class="com.chrit.aop.calcxml.LogAspect"></bean>
+	<aop:config >
+		<aop:aspect ref="logAspect">
+			<aop:pointcut id="perf" expression="execution(* com.chrit.aop.calcxml.*.*(..))"></aop:pointcut>
+			<!--<aop:before method="turnOff" pointcut-ref="perf"></aop:before>
+			<aop:after-returning method="afterShow"  pointcut-ref="perf" returning="object"></aop:after-returning>-->
+			<aop:around method="aroundShow" pointcut-ref="perf"></aop:around>
+		</aop:aspect>
+	</aop:config>
+</beans>
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+15:27:46.422 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+15:28:30.649 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+15:28:30.899 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - PooledDataSource forcefully closed/removed all connections.
+15:28:30.900 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - PooledDataSource forcefully closed/removed all connections.
+15:28:30.901 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - PooledDataSource forcefully closed/removed all connections.
+15:28:30.901 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - PooledDataSource forcefully closed/removed all connections.
+15:33:01.530 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+15:33:01.661 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - PooledDataSource forcefully closed/removed all connections.
+15:33:01.661 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - PooledDataSource forcefully closed/removed all connections.
+15:33:01.662 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - PooledDataSource forcefully closed/removed all connections.
+15:33:01.662 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - PooledDataSource forcefully closed/removed all connections.
+15:33:01.667 INFO  com.christ.spring_jdbc_mybatis.utils.MybatisUtil 24 main - org.apache.ibatis.session.defaults.DefaultSqlSessionFactory@5f9b2141
+15:37:26.179 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+15:37:26.332 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - PooledDataSource forcefully closed/removed all connections.
+15:37:26.332 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - PooledDataSource forcefully closed/removed all connections.
+15:37:26.333 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - PooledDataSource forcefully closed/removed all connections.
+15:37:26.333 DEBUG org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl 54 debug - PooledDataSource forcefully closed/removed all connections.
+15:37:26.339 INFO  com.christ.spring_jdbc_mybatis.utils.MybatisUtil 24 main - org.apache.ibatis.session.defaults.DefaultSqlSessionFactory@43ee72e6
+15:38:38.568 INFO  com.christ.spring_jdbc_mybatis.utils.MybatisUtil 24 main - org.apache.ibatis.session.defaults.DefaultSqlSessionFactory@f8c1ddd
+15:39:05.626 INFO  com.christ.spring_jdbc_mybatis.utils.MybatisUtil 24 main - org.apache.ibatis.session.defaults.DefaultSqlSessionFactory@693fe6c9
+15:40:10.725 INFO  com.christ.spring_jdbc_mybatis.utils.MybatisUtil 24 main - org.apache.ibatis.session.defaults.DefaultSqlSessionFactory@34f5090e
+17:00:59.311 INFO  com.christ.spring_jdbc_mybatis.utils.MybatisUtil 24 main - org.apache.ibatis.session.defaults.DefaultSqlSessionFactory@1b11171f
